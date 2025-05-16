@@ -4,18 +4,19 @@ import { test, expect } from '@playwright/test';
 test('has title', async ({ page }) => {
   await page.goto('https://pddtestev2.gerenciatiunifip.opalstacked.com/login/');
 
-  /*// Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);*/
+  // Expect a title "to contain" a substring.
+  //await expect(page).toHaveTitle(/FIP/);
+
+  //Insert email
+  const email = page.getByRole('textbox', { name: 'Email institucional' });
+  await email.fill('b.m.oliveira94@gmail.com');
+
+  //Insert password
+  const password = page.getByRole('textbox', { name: 'Senha' });
+  await password.fill('Bo*123456');
+
+  //Login action
+  const login = page.getByRole('button', { name: 'Entrar' });
+  await login.click();
+
 });
-
-/*
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-});
-*/
