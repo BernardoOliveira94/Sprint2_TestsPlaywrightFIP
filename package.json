@@ -1,0 +1,13 @@
+{
+  "name": "3testsplaywright",
+  "version": "1.0.0",
+  "description": "3 tests playwright to deliver",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Bernardo Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.18"
+  }
+}
