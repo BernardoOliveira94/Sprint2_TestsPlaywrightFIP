@@ -10,10 +10,10 @@ Bernardo Oliveira 3 tests playwright
 Estas notas indicam como proceder para começar a testar em playwright.
 
 Passos para dependencias e testes:
-1 - Verificar que o NODE.JS e o NPM estão instalados pondo o comando "node -v" e "npm -v" no terminal em modo administrador, e verificar se aparecem versões, se não, instalar ambos
-2 - Criar pasta nova no windows
-3 - Abrir a pasta no VSCODE
-4 - Abrir terminal
+1 - Verificar que o NODE.JS e o NPM estão instalados pondo o comando "node -v" e "npm -v" no terminal em modo administrador, e verificar se aparecem versões, se não, instalar ambos.
+2 - Criar pasta nova no windows.
+3 - Abrir a pasta no VSCODE.
+4 - Abrir terminal.
 5 - Iniciar um projeto com o comando "npm init" no terminal, para criar package.json
 6 - Inserir no terminal o comando "npm init playwright@latest" para instalar o playwright neste projeto, escolher Javascript, escolher pasta dos testes, adicionar GitHub Actions, e instalar os browsers, esperar pela mensagem happy hacking
 7 - Inserir no terminal o comando "npx playwright test --ui" para abrir este projeto no plawywright
