@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('Login valido', async ({ page }) => {
   await page.goto('https://pddtestev2.gerenciatiunifip.opalstacked.com/login/');
 
   // Expect a title "to contain" a substring.
@@ -16,7 +16,7 @@ test('has title', async ({ page }) => {
 
   //Insert password
   const password = page.getByRole('textbox', { name: 'Senha' });
-  await password.fill('Bo*123456');
+  await password.fill('Bo*1234567');
 
   //Login action
   const login = page.getByRole('button', { name: 'Entrar' });
@@ -26,7 +26,7 @@ test('has title', async ({ page }) => {
   await page.waitForTimeout(1000);
   
 
-/*
+
   //TEST 2 Create a PDD
 
   //Click in dashboard
@@ -45,10 +45,16 @@ test('has title', async ({ page }) => {
   await page.waitForTimeout(1000);
 
   //Select the subject by value, label or index
-  //await page.selectOption('#Disciplina', '11'); // value
-  //await page.selectOption('#Disciplina', { label: '11 - DISCIPLINA ONZE' }); //label
-  //await page.selectOption('#Disciplina', { index: 0 }); //index
-*/
+  
+  /*const clickSubject = page.getByLabel('Disciplina');
+  await clickSubject.selectOption('ONZE'); //value, nao funciona, rever aula com Bruno*/
+
+  const clickSubject = page.getByLabel('Disciplina');
+  await clickSubject.selectOption({ label: '11 - DISCIPLINA ONZE' }); //label
+
+  /*const clickSubject = page.getByLabel('Disciplina');
+  await clickSubject.selectOption({ index: 1 }); //index*/
+  
 
 /*
   //TEST 3 Password reset
@@ -81,6 +87,7 @@ test('has title', async ({ page }) => {
   await clickResetPassword.click();
 */
 
-  //TEST 4
+
+  //TEST 4 (a fazer)
 
 });
