@@ -22,4 +22,4 @@ Passos para dependencias e testes:
 10 - Inserir codigo no VS CODE, gravando, e dando start no Playwright para testar e ver os resultados se passaram ou não.  
 11 - Continuar até ter pelo menos 3 testes completos.  
   
-PS: Caso necessário é preciso descomentar (retirar coments) de algum código comentado a verde para o código funcionar corretamente ou num todo.
+PS: Caso necessário é preciso descomentar (retirar coments) de algum código comentado a verde para o código funcionar individualmente ou num todo.
