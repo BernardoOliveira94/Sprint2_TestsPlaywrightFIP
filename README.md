@@ -14,7 +14,7 @@ Passos para dependencias e testes:
 2 - Criar pasta nova no windows.  
 3 - Abrir a pasta no VSCODE.  
 4 - Abrir terminal.  
-5 - Iniciar um projeto com o comando "npm init" no terminal, para criar package.json.  
+5 - Iniciar um projeto com o comando "npm init" no terminal, para criar package.json. (se nao funcionar: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser)  
 6 - Inserir no terminal o comando "npm init playwright@latest" para instalar o playwright neste projeto, escolher Javascript, escolher pasta dos testes, adicionar GitHub Actions, e instalar os browsers, esperar pela mensagem happy hacking.  
 7 - Inserir no terminal o comando "npx playwright test --ui" para abrir este projeto no plawywright.  
 8 - No vs code, alterar o URL, dentro da pasta escolhida (no meu caso testsPlaywright -> example.spec.js) para o URL do site da FIP = https://pddtestev2.gerenciatiunifip.opalstacked.com/login/ .  
